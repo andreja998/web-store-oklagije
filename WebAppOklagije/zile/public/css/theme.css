@@ -1,0 +1,946 @@
+body {
+     background-color: white;
+     /* font-family: Nunito; */
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* #navbarNav a {
+     color: black;
+} */
+
+#prijava-registracija {
+     position: absolute;
+     position: fixed;
+     z-index: 10000;
+     width: 100%;
+     height: 100%;
+     background: #007bff;
+     background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+.info {
+     margin: 0;
+     background-color: rgb(0, 102, 255);
+     color: white;
+}
+.info .container {
+     padding-left: 0;
+     padding-right: 0;
+}
+#ikoniceHeader {
+     width: 100%;
+     padding: 0px;
+}
+.navbar {
+     background-color: white;
+     opacity: 0.9;
+}
+.navbar:hover { 
+     opacity: 1;
+     transition: opacity 0.5s;    
+}
+.tekst {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-color: rgb(240, 240, 240);
+     border-radius: 7px;
+}
+#carouselExampleIndicators {
+     /* margin-top: 56px; */
+}
+.carousel-item {
+     height: 73vh;
+     min-height: 300px;
+     opacity: 0.8;
+     background: no-repeat center center scroll;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+   }
+     /*---Firefox Bug Fix --*/
+     .carousel-item {
+     /* transition: -webkit-transform 0.5s ease;
+     transition: transform 0.5s ease;
+     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+     -webkit-backface-visibility: visible;
+             backface-visibility: visible; */
+   }
+#welcome-image {
+     height: 95vh;
+     min-height: 300px;
+     background: no-repeat center center scroll;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.welcome h2 {
+     margin-top: 3%;
+}
+.partneri-naslov {
+     padding: 3%;
+}
+.utisak-naslov {
+     padding: 3%;
+}
+.utisak-naslov hr {
+     border-top: 1px solid rgb(223, 223, 223);
+     color: #595959;
+     overflow: visible;
+     text-align: center;
+     height: 4px;
+}
+.utisak-naslov hr:after {
+     content: 'VAŠI UTISCI';
+	background: #fff;
+     padding: 0 30px;
+     position: relative;
+     top: -17px;
+     font-size: 20px;
+     font-weight: bold;
+}
+.partneri-naslov hr {
+     border-top: 1px solid rgb(223, 223, 223);
+     color: #595959;
+     overflow: visible;
+     text-align: center;
+     height: 4px;
+}
+.partneri-naslov hr:after
+{
+	content: 'NAŠI PARTNERI';
+	background: #fff;
+     padding: 0 30px;
+     position: relative;
+     top: -17px;
+     font-size: 20px;
+     font-weight: bold;
+}
+.proizvodi-naslov {
+     padding-top: 3%;
+}
+.proizvodi-naslov hr {
+     border-top: 1px solid rgb(223, 223, 223);
+     color: #595959;
+     overflow: visible;
+     text-align: center;
+     height: 4px;
+}
+.proizvodi-naslov hr:after
+{
+	content: 'PROIZVODI';
+	background: #fff;
+     padding: 0 30px;
+     position: relative;
+     top: -17px;
+     font-size: 20px;
+     font-weight: bold;
+}
+.srodni-proizvodi-naslov {
+     padding-top: 3%;
+}
+.srodni-proizvodi-naslov hr {
+     border-top: 1px solid rgb(223, 223, 223);
+     color: #595959;
+     overflow: visible;
+     text-align: center;
+     height: 4px;
+}
+.srodni-proizvodi-naslov hr:after
+{
+	content: 'SRODNI PROIZVODI';
+	background: #fff;
+     padding: 0 30px;
+     position: relative;
+     top: -17px;
+     font-size: 20px;
+     font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+     .partneri {
+          margin-left: 10%;
+          margin-right: 10%;
+     }
+}
+@media only screen and (min-width: 500px) {
+     .ikonica {
+          padding-left: 10%;
+          padding-right: 10%;
+     }
+}
+.welcome-text  {
+     /* background-color: #f8f9fa; */
+     background-color: rgb(0, 102, 255);
+     padding: 3%;
+}
+.welcome-text button {
+     margin-left: 2%;
+}
+.welcome-text h2 {
+     margin-bottom: 0px;
+     color: white;
+}
+/* CARDS */
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.image-flip .card-body a {
+     color: white !important;
+}
+/* FOOTER */
+#footer {
+     background-color: rgb(0, 102, 255);
+     margin-left: 0;
+     margin-right: 0;
+     color: white;
+}
+#subscribe
+{
+     font-size: 10px;
+     
+	margin-top: 40px;
+}
+#subscribe input
+{
+     background-color: white;
+     border: 1px solid black;
+     color: black;
+     padding-right: 10px;
+}
+#subscribe input::-webkit-input-placeholder {
+     color: black;
+}
+#subscribe input:focus {
+     box-shadow: none;
+}
+#subscribe a
+{
+	color: black;
+	text-decoration: underline;
+}
+#subGroup {
+     width: 100%;
+}
+.color
+{
+     background-color: white;
+     border-top: 1px solid black;
+     border-right: 1px solid black;
+     border-bottom: 1px solid black;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+     padding-left: 2%;
+     padding-right: 2%;
+     font-size: 20px;
+}
+.levi, .desni {
+     font-size: medium;
+     font-weight: lighter;
+}
+.ikonice li a {
+     color: white;
+}
+.round {
+     border-radius: 50%
+}
+/* .carousel-caption h3 {
+     transform: translateX(30%);
+     transition-timing-function: ease-in;
+     transition: 1s;
+     
+} */
+/* .carousel,
+.item,
+.active {
+    height: 100%;
+} */
+
+/* .carousel-inner {
+  height: 100%;
+  background: #000;
+} */
+
+/**
+ * Change animation duration
+ */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+     from {
+          opacity: 0;
+          -webkit-transform: translate3d(-300px, 0, 0);
+          transform: translate3d(-300px, 0, 0);
+     }
+     to {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+     }
+}
+
+@keyframes fadeInUp {
+     from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 100px, 0);
+          transform: translate3d(0, 100px, 0);
+     }
+     to {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+     }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.fadeInLeft {
+     animation-name: fadeInLeft;
+}
+.fadeInUp {
+     animation-name: fadeInUp;
+}
+
+.carousel-caption {
+     /* background-color: rgba(255, 255, 255, 0.658); */
+     border-radius: 5px;
+     /* color: rgb(0, 102, 255); */
+}
+@media screen and (max-width: 500px) {
+     .info-desno {
+          /* font-size: 14px !important; */
+          justify-content: center;
+          text-align: center !important;
+     }
+     .info-desno i {
+          /* display: none; */
+     }
+}
+.glavna-vest {
+     height: 83vh;
+     min-height: 200px;
+     opacity: 1;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.glavna-vest img {
+     width: 100%;
+     height: 100%;
+     filter: brightness(50%);
+}
+.sadrzaj {
+     position: relative;
+     top: -60%;
+     width: 60%;
+     padding-left: 5%;
+     color: white;
+}
+.slika-novosti {
+     /* width: 100%; */
+     /* height: 30vh; */
+     min-height: 200px;
+     
+     /* opacity: 1; */
+     background: no-repeat center center scroll;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.novost-par {
+     /* border: 1px solid rgb(145, 145, 145); */
+     border-radius: 5px;
+     box-shadow: 5px 10px 8px #888888;
+}
+.novost-nepar {
+     /* border: 1px solid rgb(145, 145, 145); */
+     border-radius: 5px;
+     box-shadow: -5px 10px 8px #888888;
+}
+.novost-sadrzaj h6 {
+     color: gray;
+}
+
+/* Novosti pojavljivanje */
+.come-in {
+     transform: translateY(300px);
+     animation: come-in 0.8s ease forwards;
+   }
+   .come-in:nth-child(odd) {
+     animation-duration: 0.6s;
+   }
+   .already-visible {
+     transform: translateY(0);
+     animation: none;
+   }
+   @keyframes come-in {
+     to {
+       transform: translateY(0);
+     }
+   }
+   
+.card-overlay {
+     position: absolute;
+     top: 35%;
+}
+
+/* .card:hover {
+     cursor: pointer;
+} */
+
+.card-overlay a {
+     text-decoration: none;
+     color: white;
+}
+
+/* Ripple effect */
+.ripple {
+     background-position: center;
+     transition: background 0.8s;
+   }
+   .ripple:hover {
+     background: #ffffff radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+   }
+   .ripple:active {
+     background-color: #6eb9f7;
+     background-size: 100%;
+     transition: background 0s;
+   }
+
+   .pagination .page-link {
+        color: rgb(52, 58, 64);
+   }
+   .paginacija ul  {
+        border: solid 1px rgb(52, 58, 64) !important;
+   }
+   .proizvod-slika {
+        height: 10% !important;
+   }
+
+   .wrapper-slika {
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .wrapper-slika:after {
+     content: '';
+     display: block;
+     padding-top: 75%;
+   }
+   
+   .wrapper-slika img {
+     width: auto;
+     height: 100%;
+     max-width: none;
+     position: absolute;
+     left: 50%;
+     top: 0;
+     transform: translateX(-50%);
+   }
+   .options i {
+        color: black;
+   }
+
+   .quantity {
+     position: relative;
+   }
+   
+   input[type=number]::-webkit-inner-spin-button,
+   input[type=number]::-webkit-outer-spin-button
+   {
+     -webkit-appearance: none;
+     margin: 0;
+   }
+   
+   input[type=number]
+   {
+     -moz-appearance: textfield;
+   }
+
+   .quantity {
+        width: 100%;
+        height: 100%;
+   }
+   
+   .quantity input {
+     width: 40%;
+     height: 43px;
+     line-height: 1.65;
+     float: left;
+     display: block;
+     padding: 0;
+     margin: 0;
+     padding-left: 20px;
+     border: solid 1px rgb(52, 58, 64);
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   
+   .quantity input:focus {
+     outline: 0;
+   }
+   
+   .quantity-nav {
+     float: left;
+     position: relative;
+     height: 42px;
+   }
+   
+   .quantity-button {
+     position: relative;
+     cursor: pointer;
+     border-left: solid 1px rgb(52, 58, 64);
+     width: 20px;
+     text-align: center;
+     color: #333;
+     font-size: 13px;
+     font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+     line-height: 1.7;
+     -webkit-transform: translateX(-100%);
+     transform: translateX(-100%);
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+   }
+   
+   .quantity-button.quantity-up {
+     position: absolute;
+     height: 50%;
+     top: 0;
+     border-bottom: solid 1px rgb(52, 58, 64);
+   }
+   
+   .quantity-button.quantity-down {
+     position: absolute;
+     bottom: -0px;
+     height: 50%;
+   }
+
+/* .thumbnail {
+     width: 32%;;
+} */
+
+     .slike {
+          width: 100%;
+          height: 8vw;
+          border: solid 1px rgb(52, 58, 64);
+     }
+   
+   .thumbnail {
+        float: left;
+        width: 32%;
+        height: 100%;
+     background: no-repeat center center scroll;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+   }
+   .slike-sadrzaj {
+     border: solid 1px rgb(52, 58, 64); 
+   }
+   
+   .preview img {
+     max-width: 100%;
+}
+ .preview {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+}
+ @media screen and (max-width: 996px) {
+     .preview {
+         margin-bottom: 20px;
+    }
+}
+ .preview-pic {
+     -webkit-box-flex: 1;
+     -webkit-flex-grow: 1;
+     -ms-flex-positive: 1;
+     flex-grow: 1;
+}
+ .preview-thumbnail.nav-tabs {
+     border: none;
+     margin-top: 15px;
+}
+ .preview-thumbnail.nav-tabs li {
+     width: 18%;
+     margin-right: 2.5%;
+}
+ .preview-thumbnail.nav-tabs li img {
+     max-width: 100%;
+     display: block;
+}
+ .preview-thumbnail.nav-tabs li a {
+     padding: 0;
+     margin: 0;
+}
+ .preview-thumbnail.nav-tabs li:last-of-type {
+     margin-right: 0;
+}
+ .tab-content {
+     overflow: hidden;
+}
+ .tab-content img {
+     width: 100%;
+     -webkit-animation-name: opacity;
+     animation-name: opacity;
+     -webkit-animation-duration: .3s;
+     animation-duration: .3s;
+}
+
+@-webkit-keyframes opacity {
+     0% {
+       opacity: 0;
+       -webkit-transform: scale(3);
+               transform: scale(3); }
+     100% {
+       opacity: 1;
+       -webkit-transform: scale(1);
+               transform: scale(1); } }
+   
+   @keyframes opacity {
+     0% {
+       opacity: 0;
+       -webkit-transform: scale(3);
+               transform: scale(3); }
+     100% {
+       opacity: 1;
+       -webkit-transform: scale(1);
+               transform: scale(1); } }
+.thumbnail-slike {
+     width: 100%;
+     height: 100%;
+}
+.slika-thumbnail {
+     object-fit: contain;
+     width: 30%;
+}
+
+.wrapper-thumbnail {
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .wrapper-thumbnail:after {
+     content: '';
+     display: inline-block;
+     padding-top: 75%;
+   }
+   
+   .wrapper-thumbnail img {
+     width: auto;
+     height: 100%;
+     max-width: none;
+     position: absolute;
+     left: 50%;
+     top: 0;
+     transform: translate(-50%);
+   }
+
+   .swiper-container {
+     width: 100%;
+     height: 300px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .swiper-slide {
+     background-size: cover;
+     background-position: center;
+   }
+   .gallery-top {
+     height: 80%;
+     width: 100%;
+   }
+   .gallery-thumbs {
+     height: 20%;
+     box-sizing: border-box;
+     padding: 10px 0;
+   }
+   .gallery-thumbs .swiper-slide {
+     width: 25%;
+     height: 100%;
+     opacity: 0.4;
+   }
+   .gallery-thumbs .swiper-slide-active {
+     opacity: 1;
+   }
+   .checked {
+        color: rgb(0, 102, 255);
+   }
+   .naziv-proizvoda {
+        text-transform: uppercase;
+        font-weight: bolder;
+   }
+   .fa-euro-sign {
+        color: black;
+   }
+
+   .kategorija {
+     text-transform: uppercase;
+     color: #AAABB8;
+     float: left;
+   }
+   .quantity-detalji {
+        width: 45%;
+   }
+
+   .scrollable-produkti {
+     overflow-x: scroll;
+     overflow-y: hidden;
+     white-space: nowrap;
+     -webkit-overflow-scrolling: touch;
+     
+   }
+
+   .scrollable-produkti .card {
+          display: inline-block;
+   }
+   .komentari .card-inner{
+     margin-left: 4rem;
+ }
+ .komentari .card-body a {
+      color: white;
+ }
+.komentar .card-body a:focus {
+     color: white !important;
+}
+
+.widget-area {
+     background-color: #fff;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+     border-radius: 4px;
+     -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+     -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+     -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+     box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+     float: left;
+     margin-top: 30px;
+     padding: 25px 30px;
+     position: relative;
+     width: 100%;
+     }
+     .status-upload {
+     background: none repeat scroll 0 0 #f5f5f5;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+     border-radius: 4px;
+     float: left;
+     width: 100%;
+     }
+     .status-upload form {
+     float: left;
+     width: 100%;
+     }
+     .status-upload form textarea {
+     background: none repeat scroll 0 0 #fff;
+     border: medium none;
+     -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+     -ms-border-radius: 4px 4px 0 0;
+     -o-border-radius: 4px 4px 0 0;
+     border-radius: 4px 4px 0 0;
+     color: #777777;
+     float: left;
+     font-family: Lato;
+     font-size: 14px;
+     height: 142px;
+     letter-spacing: 0.3px;
+     padding: 20px;
+     width: 100%;
+     resize:vertical;
+     outline:none;
+     border: 1px solid #F2F2F2;
+     }
+
+     .status-upload i {
+          color: black;
+     }
+     
+     .status-upload ul {
+     float: left;
+     list-style: none outside none;
+     margin: 0;
+     padding: 0 0 0 15px;
+     width: auto;
+     }
+     .status-upload ul > li {
+     float: left;
+     }
+     .status-upload ul > li > a {
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+     border-radius: 4px;
+     color: #000000;
+     float: left;
+     font-size: 14px;
+     height: 30px;
+     line-height: 30px;
+     margin: 10px 0 10px 10px;
+     text-align: center;
+     -webkit-transition: all 0.4s ease 0s;
+     -moz-transition: all 0.4s ease 0s;
+     -ms-transition: all 0.4s ease 0s;
+     -o-transition: all 0.4s ease 0s;
+     transition: all 0.4s ease 0s;
+     width: 30px;
+     cursor: pointer;
+     }
+     .status-upload form button {
+     border: medium none;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+     border-radius: 4px;
+     color: #fff;
+     float: right;
+     font-family: Lato;
+     font-size: 14px;
+     letter-spacing: 0.3px;
+     margin-right: 9px;
+     margin-top: 9px;
+     padding: 6px 15px;
+     }
+     .dropdown > a > span.green:before {
+     border-left-color: #2dcb73;
+     }
+     .status-upload form button > i {
+     margin-right: 7px;
+     }

@@ -1,0 +1,45 @@
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  table#korpa tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+  .actions .btn-info {
+    float: left;
+  }
+  .actions .btn-danger {
+    float: right;
+  }
+  table#korpa thead {
+    display: none;
+  }
+  table#korpa tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+  table#korpa tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+  table#korpa tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+  table#korpa tfoot td {
+    display: block;
+  }
+  table#korpa tfoot td .btn {
+    display: block;
+  }
+}
